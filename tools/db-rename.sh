@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# Rename database
+# $ /tools/db-rename.sh [OLD_DB_NAME] [NEW_DB_NAME]
+
 cdir="${0%/*}"
 DATE_STAMP=$(date "+%Y%m%d_%H%M%S")
 OLD_DB_NAME=$1

@@ -44,7 +44,7 @@ If changes are made to the `Vagrantfile` then a reprovision is necessary: `vagra
 /tools/db-backup.sh [OLD_DB_NAME] [NEW_DB_NAME]
 
 # Create blank database
-/tools/db-create-blank.sh
+/tools/db-create-blank.sh [DB_NAME]
 
 # Dump database into /dbdump/ folder
 /tools/db-dump.sh
@@ -53,7 +53,7 @@ If changes are made to the `Vagrantfile` then a reprovision is necessary: `vagra
 /tools/db-import-latest.sh
 
 # Rename existing database and import /dbdump/latest.sql
-/tools/db-reimport.sh
+/tools/db-reimport.sh [DB_NAME] [DB_IMPORT_FILE]
 
 # Renames [CUR_DB_NAME] to something else and then copies [BACKUP_DB_NAME] as [CUR_DB_NAME]
 /tools/db-restore.sh [BACKUP_DB_NAME] [CUR_DB_NAME]

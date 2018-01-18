@@ -1,3 +1,3 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 sudo -u postgres psql

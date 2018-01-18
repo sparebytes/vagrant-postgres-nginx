@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# Kill all database connections to [DB_NAME]
+# $ /tools/db-kill-connections.sh [DB_NAME]
+
 DB_NAME=$1
 
 if [[ -z "$DB_NAME" ]]; then
