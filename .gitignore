@@ -1,0 +1,8 @@
+.vagrant
+/www
+/mylogs/**/*
+!/mylogs/**/.gitkeep
+/dbdump/*
+!/dbdump/shared
+/setup/config/constants.sh
+*.stackdump
